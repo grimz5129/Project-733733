@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar left">
+            <div class="highscore">
+                <h2>High Score</h2>
+                <p id="highScore">0</p>
+                <h2>Current Score</h2>
+                <p id="currentScore">0</p>
+            </div>
+        </div>
+        <div class="main">
+            <div class="phone-container">
+                <img src="assets/nokia.png" alt="Nokia Phone" class="phone-image">
+                <canvas id="gameCanvas"></canvas>
+                <div id="numpad">
+                    <button class="num-key" data-value="1">1</button>
+                    <button class="num-key" data-value="2">2</button>
+                    <button class="num-key" data-value="3">3</button>
+                    <button class="num-key" data-value="4">4</button>
+                    <button class="num-key" data-value="5">5</button>
+                    <button class="num-key" data-value="6">6</button>
+                    <button class="num-key" data-value="7">7</button>
+                    <button class="num-key" data-value="8">8</button>
+                    <button class="num-key" data-value="9">9</button>
+                    <button class="num-key" data-value="*">*</button>
+                    <button class="num-key" data-value="0">0</button>
+                    <button class="num-key" data-value="#">#</button>
+                </div>
+            </div>
+        </div>
+        <div class="sidebar right">
+            <div class="instructions">
+                <h2>Instructions</h2>
+                <p>Use the arrow keys to control the snake.</p>
+                <p>Press the buttons in the correct sequence to start the game: 733733.</p>
+                <p>Eat the food to grow the snake and increase your score.</p>
+                <p>Avoid colliding with the walls and the snake itself.</p>
+                <p>Click game window to restart</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

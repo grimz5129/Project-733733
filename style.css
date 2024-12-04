@@ -1,0 +1,88 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #707a7e;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.sidebar {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.left .highscore, .right .instructions {
+    background-color: #495054;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.phone-container {
+    position: relative;
+    width: 300px;
+    height: 600px;
+}
+
+.phone-image {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+canvas {
+    position: absolute;
+    top: 26%; /* Adjust this value to match the screen position */
+    left: 22%; /* Adjust this value to match the screen position */
+    width: 150px; /* Adjust to match the new canvas size */
+    height: 130px; /* Adjust to match the new canvas size */
+    background-color: #495054;
+    border: 2px solid #002200;
+    border-radius: 10px;
+    image-rendering: pixelated; /* Ensures the canvas has a pixelated look */
+}
+
+#numpad {
+    position: absolute;
+    top: 380px; /* Adjust according to the image */
+    left: 73px; /* Adjust according to the image */
+    display: grid;
+    grid-template-columns: repeat(3, 50px); /* Adjust button size */
+    grid-gap: 10px;
+}
+
+.num-key {
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border: none;
+    color: transparent;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+    outline: none; /* Prevent focus outline */
+}
+
+.num-key:focus {
+    outline: none; /* Prevent focus outline */
+}
